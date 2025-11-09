@@ -1,4 +1,4 @@
-# 🌐 Hosting Template: React Application
+# ⚛️ Hosting Template: React Application
 
 Este repositorio contiene el código base para una aplicación **React** dockerizada, lista para el despliegue a través de la plataforma de **Hosting basada en contenedores**.
 
