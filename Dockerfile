@@ -1,6 +1,7 @@
 # ==============================
 # Etapa 1: Construcción de la app
 # ==============================
+
 FROM node:18-alpine AS build
 
 WORKDIR /app
