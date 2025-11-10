@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código base para una aplicación **React** dockerizada, lista para el despliegue a través de la plataforma de **Hosting basada en contenedores**.
 
-Este template utiliza *Node.js* y *Nginx* dentro de un contenedor Docker para compilar y servir el contenido de manera eficiente.
+El template utiliza *Node.js* y *Nginx* dentro de un contenedor Docker para compilar y servir la aplicación de manera eficiente.
 
 ---
 
@@ -10,28 +10,35 @@ Este template utiliza *Node.js* y *Nginx* dentro de un contenedor Docker para co
 
 Sigue estos pasos para adaptar este template a tu proyecto y desplegarlo en la plataforma de Hosting:
 
-1. **Clonar el Template:** Clona este repositorio en tu cuenta personal de GitHub.
-2. **Modificar el Código:**
-   - Trabaja exclusivamente dentro de la carpeta `src/`.
-   - Edita los archivos `src/App.js`, `src/index.js` y los recursos de `public/` para personalizar tu aplicación.
-3. **Registro en la plataforma de Hosting:**
-   - Una vez que tu proyecto esté listo en tu repositorio personal, copia la URL del repositorio.
+1. **Clonar el Template:**  
+   Clona este repositorio en tu cuenta personal de GitHub.
+
+2. **Modificar el Código:**  
+   - Trabaja exclusivamente dentro de la carpeta `src/`.  
+   - Edita los archivos `App.js`, `App.css` e `index.js` para personalizar tu aplicación.  
+   - Si deseas modificar el HTML base, puedes editar `public/index.html`.
+
+3. **Registro en la Plataforma de Hosting:**  
+   - Una vez que tu proyecto esté listo en tu repositorio personal, copia la URL del repositorio.  
    - Regístrala en la interfaz de la plataforma de Hosting.
-4. **Despliegue:**
-   - La plataforma construirá automáticamente el contenedor y te asignará una URL local donde podrás acceder a tu aplicación.
+
+4. **Despliegue:**  
+   - La plataforma construirá automáticamente el contenedor y te asignará una URL local donde podrás acceder a tu aplicación React.
 
 ---
 
 ## 📁 Estructura del Template
 
-La arquitectura está diseñada para separar el código de usuario del proceso de despliegue.
+La arquitectura está diseñada para separar tu código del proceso de despliegue.
 
 | Archivo/Directorio | Descripción | ¿Editable por el Usuario? |
 | :------------------ | :----------- | :------------------------ |
-| src/ | Contiene el código fuente de React (componentes, vistas, etc.) | ✅ SÍ |
-| public/index.html | Archivo HTML principal, punto de montaje de React. | ✅ SÍ |
-| package.json | Define dependencias y scripts del proyecto. | ⚠️ Con precaución |
-| **Dockerfile** | Instrucciones Docker para compilar y servir la aplicación. | ❌ NO |
+| src/App.js | Componente principal de la aplicación. | ✅ SÍ |
+| src/App.css | Hoja de estilos personalizada para la aplicación. | ✅ SÍ |
+| src/index.js | Punto de montaje principal de React. | ✅ SÍ |
+| public/index.html | Plantilla HTML base de la app. | ✅ SÍ |
+| **Dockerfile** | Instrucciones Docker para compilar y servir la app. | ❌ NO |
+| **package.json** | Configuración y dependencias de React. | ⚠️ Con precaución |
 
 ---
 
